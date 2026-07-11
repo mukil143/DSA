@@ -1,11 +1,10 @@
 class Solution {
     public int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {
         int total = 0;
-        for(int i = 0; i < worker.length ;i++){
-            int cW = worker[i];
+        for(int w : worker){
             int maxProfit = 0;
             for(int j = 0;j < difficulty.length ; j++){
-                if(difficulty[j] <= cW){
+                if(difficulty[j] <= w){
                     maxProfit = Math.max(maxProfit,profit[j]);
                 }
             }
