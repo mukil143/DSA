@@ -31,9 +31,9 @@ class Solution {
                 if (curr.right != null)
                     q.add(curr.right);
             }
-            res.add(Level);
+            res.add(0,Level);
         }
-        Collections.reverse(res);
+        
         return res;
     }
 }
