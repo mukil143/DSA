@@ -31,7 +31,7 @@ class Solution {
                 if (curr.right != null)
                     q.add(curr.right);
             }
-            res.add(0,Level);
+            res.addFirst(Level);
         }
         
         return res;
